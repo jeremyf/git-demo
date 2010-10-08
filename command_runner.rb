@@ -19,7 +19,7 @@ class CommandRunner
   VALUE = "2"
 
   def run(command, message)
-    info(message, "\nRunning:\n", "  $ #{command}")
+    info(message,"\nRunning:\n", "  $ #{command}")
     Kernel.system("cd #{target_directory} && #{command}")
     ask("[Press Enter to continue]")
   end

@@ -75,6 +75,11 @@ CommandRunner.context do
   )
   
   run(
+    "gitk --all", 
+    "I'm going to open up the baked-in repository browser."
+  )
+  
+  run(
     "ls -la",
     "List all of the files in the demo. (note the .git directory, magic happens in there)"
   )
@@ -88,6 +93,19 @@ CommandRunner.context do
     "git diff adding-test",
     "Determine the diff between two branches."
   )
+
+  
+  command_to_run = (1..3).inject([]){|m,i| m << "touch NEW_FILE_#{i} && git add . && git commit -m 'Added NEW_FILE_#{i} to demonstrate branches'"}.join(' && ')
+  run(
+      command_to_run,
+      "Create and commit a new file to the repository."
+  )
+    
+  run(
+    "gitk --all", 
+    "I'm going to open up the baked-in repository browser."
+  )
+
   
   run(
     "git merge adding-test",
