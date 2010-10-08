@@ -1,0 +1,5 @@
+h1. A simple scripted demonstration of Git
+
+This script runs through a very simple demonstration of a local git repository.
+
+For more information "see the book":http://book.git-scm.com/
