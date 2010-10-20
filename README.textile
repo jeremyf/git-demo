@@ -2,4 +2,19 @@ h1. A simple scripted demonstration of Git
 
 This script runs through a very simple demonstration of a local git repository.
 
+h2. What to do
+
+# Do you have ruby 1.8.7 (or higher installed)?
+## Yes. Goto next item.
+## No. You'll need to do that.
+# Download and extract the source (See the big Download button on Github?)
+# Make sure you have a ~/Desktop folder defined
+# In the downloaded directory, type *ruby main.rb*
+
+h2. For Windows?
+
+You'll need "Cgwyn":http://www.cygwin.com/ and I make no promises that anything will work.
+
+h2. More Information about Git
+
 For more information "see the book":http://book.git-scm.com/
