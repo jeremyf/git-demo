@@ -5,7 +5,7 @@ require File.join(File.dirname(File.expand_path(__FILE__)), 'command_runner.rb')
 
 class CommandRunnerTest < Test::Unit::TestCase
   def test_command_runner_responds_to_do
-    assert_respond_to CommandRunner.new, :do
+    assert_respond_to CommandRunner.new, :run
   end
 
   def test_command_runner_file_exists
