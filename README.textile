@@ -4,12 +4,13 @@ This script runs through a very simple demonstration of a local git repository.
 
 h2. What to do
 
-# Do you have ruby 1.8.7 (or higher installed)?
+# Do you have ruby 1.8.7 or higher installed?
 ## Yes. Goto next item.
 ## No. You'll need to do that.
 # Download and extract the source (See the big Download button on Github?)
 # Make sure you have a ~/Desktop folder defined
-# In the downloaded directory, type *ruby main.rb*
+# In the downloaded directory, type *bundle install; bundle ruby main.rb*
+# Read what is happening and be ready to [Press Enter to continue]
 
 h2. For Windows?
 

@@ -1,0 +1,9 @@
+GEM
+  specs:
+    highline (1.6.15)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  highline
