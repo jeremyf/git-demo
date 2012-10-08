@@ -37,7 +37,7 @@ class CommandRunner
   def target_directory
     return @target_directory if @target_directory
     
-    response = '/Users/jeremyf/Desktop/demo' # highline.ask('Where do you want the demo?')
+    response = File.join(ENV['HOME'],'/Desktop/demo') # highline.ask('Where do you want the demo?')
     
     # Creating an instance variable which is accessible within the scope
     # of this newly object.
