@@ -21,7 +21,7 @@ class CommandRunner
   def run(command, message)
     info(message,"\nRunning:\n", "  $ #{command}")
     Kernel.system("cd #{target_directory} && #{command}")
-    ask("[Press Enter to continue]")
+    ask("\n[Press Enter to continue]\n \n")
   end
 
   def info(*args)
@@ -31,7 +31,7 @@ class CommandRunner
 
   def ask(*args, &block)
     message = messagify(false, *args)
-    highline.ask(highline.color(message, :blue), &block)
+    highline.ask(highline.color(message, :white, :on_green), &block)
   end
 
   def target_directory

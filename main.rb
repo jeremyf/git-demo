@@ -103,7 +103,7 @@ CommandRunner.context do
 
   run(
     "gitk --all",
-    "I'm going to open up the baked-in repository browser."
+    "I'm going to open up the baked-in repository browser. Notice the 'adding-test' branch"
   )
 
 
@@ -178,8 +178,8 @@ CommandRunner.context do
 
   run(
     "cp #{this_file.expand_path.dirname.join('pre-commit')} ./.git/hooks/pre-commit",
-    "I'm going to add a git hook.  There are plenty of hooks available:
-    You just have to write what you want them to do.  Parse all changed files before committing?  Format all commit messages to be 80 lines?"
+    "I'm going to add a git hook.  There are plenty of hooks available:\n" <<
+    "You just have to write what you want them to do.  Parse all changed files before committing?  Format all commit messages to be 80 lines?"
   )
 
   run(
