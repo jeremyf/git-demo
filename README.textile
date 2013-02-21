@@ -11,7 +11,7 @@ h2. What to do
 ## ```git clone https://github.com/jeremyf/git-demo.git```
 ## or click the Zip button up above and extract to the downloaded directory
 # Make sure you have a ~/Desktop folder defined
-# In the downloaded directory, type *bundle install; bundle ruby main.rb*
+# In the downloaded directory, type *bundle install; bundle exec ruby main.rb*
 # Read what is happening and be ready to [Press Enter to continue]
 
 h2. For Windows?
